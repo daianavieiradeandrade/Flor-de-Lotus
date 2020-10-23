@@ -22,7 +22,7 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        conectar = findViewById(R.id.btn_connect);
+        conectar=(Button)findViewById(R.id.btn_connect);
 
         conectar.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -8,27 +8,27 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button signin, login, admin;
+    private Button login,signin, admin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        signin = findViewById(R.id.btn_signin);
-        login = findViewById(R.id.btn_login);
+        login = findViewById(R.id.btnLogin);
+        signin = findViewById(R.id.btnSignIn);
         admin = findViewById(R.id.btnAdmin);
 
-        signin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Cadastro.class));
-            }
-        });
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, CalendarAction.class));
+            }
+        });
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Cadastro.class));
             }
         });
         admin.setOnClickListener(new View.OnClickListener() {

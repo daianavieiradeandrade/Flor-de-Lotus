@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#66BCE1"
+    android:background="#9864F3"
     tools:context=".CalendarAction">
 
     <LinearLayout
         android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         android:background="#fff"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
@@ -19,19 +19,15 @@
 
 
         <TextView
-        android:id="@+id/txt_data_inicio_mentrual"
         android:textColor="#000"
-            android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Periodo menstrual iniciado em 26/06/2019 - Domingo"/>
 
         <TextView
             android:layout_marginTop="10dp"
-            android:id="@+id/txt_duracao_prevista"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Periodo menstrual iniciado em 26/06/2019 - Domingo"
             android:textColor="#000" />
     </LinearLayout>
@@ -39,7 +35,7 @@
 
     <CalendarView
         android:id="@+id/calendarView"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:layout_gravity="center"
         android:background="#4AD36EE4"
@@ -96,9 +92,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="80dp"
             android:layout_marginTop="40dp"
-            android:background="@drawable/ic_038_pregnant_1"
-            android:text="" />
-
+            android:background="@drawable/ic_038_pregnant_1"/>
     </RelativeLayout>
 
 </LinearLayout>

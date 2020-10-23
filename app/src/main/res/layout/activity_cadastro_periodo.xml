@@ -6,23 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#66BCE1"
+    android:background="#9864F3"
     tools:context=".CadastroPeriodo">
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:background="#fff"
+        android:layout_height="106dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:textColor="#000"
+        android:background="#fff"
         android:padding="20dp"
         android:text="Seja bem vinda!
-Vamos começar com as configurações iniciais para monitoramento do seu ciclo menstrual?" />
+Vamos começar com as configurações iniciais para monitoramento do seu ciclo menstrual e fértil?"
+        android:textColor="#000" />
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -36,16 +34,14 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:ems="10"
-        android:inputType="time"
-        android:background="#fff"
+        android:inputType="date"
+        android:background="#DB82E1"
         android:gravity="center"
         android:hint="12/11/2020"
         android:textColorHint="#564654"
         android:textColor="#000000" />
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -62,13 +58,11 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
         android:gravity="center"
         android:hint="5 dias"
         android:textColorHint="#564654"
-        android:background="#fff"
-        android:ems="10"
+        android:background="#DB82E1"
         android:inputType="number"
         android:textColor="#000000" />
 
     <TextView
-        android:id="@+id/textView6"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -82,11 +76,10 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:ems="10"
         android:hint="28 dias"
         android:textColorHint="#564654"
         android:gravity="center"
-        android:background="#fff"
+        android:background="#DB82E1"
         android:inputType="number"
         android:textColor="#000000" />
 
@@ -94,9 +87,9 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
         android:id="@+id/btnSave"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:layout_gravity="center"
-        android:background="#0EF611"
+        android:background="#851075"
         android:text="salvar" />
 
 

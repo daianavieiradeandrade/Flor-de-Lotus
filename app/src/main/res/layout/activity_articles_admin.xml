@@ -17,7 +17,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:background="#fff"
-        android:ems="10"
         android:textColor="#000"
         android:gravity="center"
         android:textColorHint="#000"
@@ -30,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:background="#304EEA"
+        android:background="#1A88DF"
         android:text="Postar" />
 
     <Button
@@ -38,7 +37,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="#304EEA"
+        android:background="#1A88DF"
         android:layout_marginTop="10dp"
         android:text="Editar Postagens" />
 </LinearLayout>

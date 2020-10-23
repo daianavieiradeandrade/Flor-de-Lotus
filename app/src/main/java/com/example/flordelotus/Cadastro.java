@@ -24,7 +24,7 @@ public class Cadastro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
 
-        novoCadastro = findViewById(R.id.new_cadastro);
+        novoCadastro = findViewById(R.id.newSignIn);
         novoCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

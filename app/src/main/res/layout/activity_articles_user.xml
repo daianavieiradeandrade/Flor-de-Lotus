@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#66BCE1"
+    android:background="#9864F3"
     tools:context=".ArticlesUser">
 
     <TextView
@@ -61,7 +61,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="#2BFF4D"
+        android:background="#1A88DF"
         android:layout_marginTop="20dp"
         android:text="Voltar" />
 </LinearLayout>

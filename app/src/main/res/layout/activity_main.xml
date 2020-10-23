@@ -6,12 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#2CA1FD"
+    android:background="#9864F3"
     tools:context=".InserirConvite">
 
 
     <TextView
-        android:id="@+id/titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -19,15 +18,13 @@
         android:text="FLOR DE LÓTUS" />
 
     <ImageView
-        android:id="@+id/imageView_logo"
+        app:srcCompat="@drawable/ic_flor"
         android:layout_width="250dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/ic_flor"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/text_boasvindas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -35,70 +32,65 @@
         android:text="SEJA BEM VINDO!" />
 
     <TextView
-        android:id="@+id/textView_email"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="E-MAIL" />
 
     <EditText
-        android:id="@+id/email_user"
+        android:id="@+id/mail"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:background="#F4F4F4"
         android:textColor="#000"
-        android:ems="10"
         android:textColorHint="#8C7979"
         android:hint="Informe seu e-mail"
         android:inputType="textWebEmailAddress" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="SENHA" />
 
     <EditText
-        android:id="@+id/senha_user"
+        android:id="@+id/password"
         android:layout_width="300dp"
         android:layout_height="40dp"
-
         android:layout_gravity="center"
         android:gravity="center"
         android:textColorHint="#8C7979"
         android:background="#F4F4F4"
         android:textColor="#000"
-        android:ems="10"
         android:hint="Informe sua senha"
         android:inputType="textVisiblePassword" />
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btnLogin"
         android:layout_gravity="center"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:background="#E91E63"
-        android:text="ENTRAR"/>
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#851075"
+        android:text="LOGIN"/>
 
     <Button
-        android:id="@+id/btn_signin"
+        android:id="@+id/btnSignIn"
         android:layout_gravity="center"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
-        android:background="#E91E63"
-        android:text="CADASTRAR NOVA CONTA"/>
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#851075"
+        android:text="CADASTRO"/>
 
     <Button
         android:id="@+id/btnAdmin"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:background="#673AB7"
-        android:text="Artigos" />
+        android:layout_marginTop="10dp"
+        android:background="#1A88DF"
+        android:text="ADMIN INPUT ARTICLES" />
 </LinearLayout>
 
