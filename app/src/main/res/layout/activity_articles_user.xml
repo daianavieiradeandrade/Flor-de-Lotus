@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#66BCE1"
+    tools:context=".ArticlesUser">
+
+    <TextView
+        android:id="@+id/textView_post1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Planejamento Familiar é um conjunto de ações que auxiliam homens e mulheres a planejar a chegada dos filhos, e também a prevenir gravidez não planejada."
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView_post2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="O Período Fértil é a fase do ciclo menstrual em que a mulher tem a maior probabilidade de engravidar, pois é quando há liberação de um óvulo por um dos ovários, que pode ser fecundado..."
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView_post3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Mais da metade das mulheres brasileiras não sabe quando pode engravidar e 45% não conhecem o próprio ciclo menstrual..."
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView_post4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="A maioria dos serviços de planejamento familiar é percebida como não acolhedora para os homens como parceiros ou clientes em si, com uma falta de infraestrutura de saúde direcionada aos homens, incluindo políticas, serviços e horários de atendimento. Além disso, falta a capacidade dos profissionais de saúde de aconselhar os homens sobre contracepção."
+        android:textColor="#000" />
+    <Button
+        android:id="@+id/btn_voltar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#2BFF4D"
+        android:layout_marginTop="20dp"
+        android:text="Voltar" />
+</LinearLayout>

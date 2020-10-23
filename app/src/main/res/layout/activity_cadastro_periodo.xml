@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#66BCE1"
+    tools:context=".CadastroPeriodo">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:padding="20dp"
+        android:text="Seja bem vinda!
+Vamos começar com as configurações iniciais para monitoramento do seu ciclo menstrual?" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Informe a data da sua ultima menstruação"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/lastPeriod"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="time"
+        android:background="#fff"
+        android:gravity="center"
+        android:hint="12/11/2020"
+        android:textColorHint="#564654"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Quanto tempo dura a sua menstruação em média?"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/periodDays"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="5 dias"
+        android:textColorHint="#564654"
+        android:background="#fff"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Qual é periodo médio do seu ciclo menstrual?"
+        android:layout_gravity="center"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/periodAvarage"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="28 dias"
+        android:textColorHint="#564654"
+        android:gravity="center"
+        android:background="#fff"
+        android:inputType="number"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:background="#0EF611"
+        android:text="salvar" />
+
+
+</LinearLayout>

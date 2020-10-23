@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2CA1FD"
+    tools:context=".GerarConvite">
+
+    <EditText
+        android:id="@+id/codigo"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:hint="ABCD1234"
+        android:textColor="#11AE3D" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="#9C27B0"
+        android:text="GERAR CÓDIGO" />
+
+    <RelativeLayout
+        android:layout_width="271dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:background="#2196F3">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginRight="46dp"
+            android:gravity="center"
+            android:text="Compartilhar com..."
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_mail"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="35dp"
+
+            android:background="@drawable/ic_share" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

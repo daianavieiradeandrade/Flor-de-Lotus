@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2CA1FD"
+    tools:context=".Settings">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_couple"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+    android:layout_width="350dp"
+    android:layout_height="40dp"
+    android:layout_gravity="center"
+    android:textSize="20sp"
+    android:textColor="#610970"
+    android:gravity="bottom"
+    android:text="Nome" />
+
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        android:text="Virginia Rodrigues" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#610970"
+        android:gravity="bottom"
+        android:text="E-mail" />
+
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:text="virginia@gmail.com" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#F3709D"
+        android:text="Conectar Parceiro" />
+
+    <Button
+        android:id="@+id/disconnect"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#F3709D"
+        android:text="Desconectar parcceiro" />
+
+    <item
+            android:id="@+id/share"
+            android:title="Share"
+            android:icon="@drawable/ic_share"
+            app:showAsAction="always"/>
+
+</LinearLayout>

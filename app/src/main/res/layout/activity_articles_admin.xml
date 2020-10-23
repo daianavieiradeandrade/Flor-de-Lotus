@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3DC9FF"
+    tools:context=".ArticlesAdmin">
+
+
+    <EditText
+        android:id="@+id/insertPost"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:ems="10"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textColorHint="#000"
+        android:inputType="textMultiLine"
+        android:hint="Insira a postagem" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#304EEA"
+        android:text="Postar" />
+
+    <Button
+        android:id="@+id/btnEditPost"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#304EEA"
+        android:layout_marginTop="10dp"
+        android:text="Editar Postagens" />
+</LinearLayout>
