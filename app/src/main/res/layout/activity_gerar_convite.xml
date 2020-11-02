@@ -14,7 +14,7 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:background="#000000"
         android:gravity="center"
         android:hint="ABCD1234"
@@ -25,15 +25,16 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:background="#9C27B0"
-        android:text="GERAR CÓDIGO" />
+        android:background="#21F11D"
+        android:text="GERAR CÓDIGO"
+        android:textColor="#000" />
 
     <RelativeLayout
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_gravity="center"
         android:layout_marginTop="75dp"
-        android:background="#673AB7">
+        android:background="#21F11D">
 
         <TextView
             android:layout_width="wrap_content"
@@ -50,13 +51,13 @@
 
         <Button
             android:id="@+id/btn_share"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="167dp"
+            android:layout_height="176dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="52dp"
+            android:layout_marginLeft="48dp"
             android:layout_marginTop="50dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="31dp"
             android:background="@drawable/ic_share" />
     </RelativeLayout>
 

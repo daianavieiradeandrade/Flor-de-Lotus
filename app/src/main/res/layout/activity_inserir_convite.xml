@@ -10,10 +10,11 @@
     tools:context=".InserirConvite">
 
     <ImageView
-        android:layout_width="191dp"
-        android:layout_height="246dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="246dp"
+        android:layout_height="254dp"
         android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
         app:srcCompat="@drawable/ic_couple"
         tools:ignore="VectorDrawableCompat" />
 
@@ -33,6 +34,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
+        android:textColor="#000"
         android:background="#35EF64"
         android:text="VALIDAR CÓDIGO"/>
 </LinearLayout>

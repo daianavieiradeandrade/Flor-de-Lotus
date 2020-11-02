@@ -46,11 +46,12 @@ public class MainActivity extends AppCompatActivity {
                 String password = mPassword.getText().toString().trim();
 
                 if(TextUtils.isEmpty(email )){
-                    mPassword.setError("E-mail é requerido.");
+                    mEmail.setError("E-mail é requerido.");
                     return;
                 }
                 if(TextUtils.isEmpty(password)){
                     mPassword.setError("Senha é requerida.");
+                    return;
                 }
 
                 progressBar.setVisibility(View.VISIBLE);

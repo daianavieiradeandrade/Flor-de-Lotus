@@ -34,7 +34,7 @@
         android:textSize="20dp"
         android:background="#000"
         android:gravity="center"
-        android:padding="5dp"
+        android:padding="10dp"
         android:inputType="textPersonName"
         android:text="Virginia Rodrigues" />
 
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:background="#000"
-        android:padding="5dp"
+        android:padding="10dp"
         android:gravity="center"
         android:layout_gravity="center"
         android:inputType="textPersonName"
