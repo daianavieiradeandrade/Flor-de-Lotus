@@ -31,6 +31,7 @@
             android:id="@+id/feminino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="FEMININO"
             android:textColor="#000000" />
 
@@ -51,7 +52,7 @@
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/fullName"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
@@ -69,7 +70,7 @@
         android:textColor="#000000"/>
 
     <EditText
-        android:id="@+id/mail"
+        android:id="@+id/email"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="40dp"
@@ -105,7 +106,7 @@
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/ConfirmPassword"
+        android:id="@+id/passwordConfirm"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="40dp"
@@ -115,13 +116,20 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/newSignIn"
+        android:id="@+id/btnRegister"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="#851075"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:text="CADASTRAR" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
 
 </LinearLayout>
 

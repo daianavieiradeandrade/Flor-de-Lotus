@@ -30,16 +30,16 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
 
     <EditText
         android:id="@+id/lastPeriod"
-        android:layout_width="300dp"
+        android:layout_width="190dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:inputType="date"
+        android:layout_marginTop="10dp"
         android:background="#DB82E1"
         android:gravity="center"
         android:hint="12/11/2020"
-        android:textColorHint="#564654"
-        android:textColor="#000000" />
+        android:inputType="date"
+        android:textColor="#000000"
+        android:textColorHint="#564654" />
 
     <TextView
         android:layout_width="300dp"
@@ -51,16 +51,16 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
 
     <EditText
         android:id="@+id/periodDays"
-        android:layout_width="300dp"
+        android:layout_width="195dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#DB82E1"
         android:gravity="center"
         android:hint="5 dias"
-        android:textColorHint="#564654"
-        android:background="#DB82E1"
         android:inputType="number"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textColorHint="#564654" />
 
     <TextView
         android:layout_width="300dp"
@@ -72,25 +72,32 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
 
     <EditText
         android:id="@+id/periodAvarage"
-        android:layout_width="300dp"
+        android:layout_width="192dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:hint="28 dias"
-        android:textColorHint="#564654"
-        android:gravity="center"
+        android:layout_marginTop="10dp"
         android:background="#DB82E1"
+        android:gravity="center"
+        android:hint="28 dias"
         android:inputType="number"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textColorHint="#564654" />
 
     <Button
         android:id="@+id/btnSave"
-        android:layout_width="300dp"
+        android:layout_width="213dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
         android:background="#851075"
         android:text="salvar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
 
 
 </LinearLayout>
