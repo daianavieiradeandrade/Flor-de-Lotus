@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -18,12 +17,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.util.Calendar;
-
 public class MainActivity extends AppCompatActivity {
 
     EditText mEmail, mPassword;
-    Button login, register;
+    Button login, register, adm;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
 
@@ -38,18 +35,19 @@ public class MainActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         login = findViewById(R.id.btnLogin);
         register = findViewById(R.id.btnRegister);
+       // adm = findViewById(R.id.btnAdmin);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email = mEmail.getText().toString().trim();
-                String password = mPassword.getText().toString().trim();
+                final String password = mPassword.getText().toString().trim();
 
-                if(TextUtils.isEmpty(email )){
+                if (TextUtils.isEmpty(email)) {
                     mEmail.setError("E-mail é requerido.");
                     return;
                 }
-                if(TextUtils.isEmpty(password)){
+                if (TextUtils.isEmpty(password)) {
                     mPassword.setError("Senha é requerida.");
                     return;
                 }
@@ -60,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(MainActivity.this, "Login feito com sucesso!", Toast.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.VISIBLE);
+                            Toast.makeText(MainActivity.this, "Sucess!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), CalendarAction.class));
 
                         } else {
@@ -77,5 +76,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), Cadastro.class));
             }
         });
+        /*
+        adm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ArticlesAdmin.class));
+            }
+        });
+        */
     }
 }

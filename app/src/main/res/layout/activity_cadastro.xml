@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/imgGender"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="150dp"
+        android:layout_height="139dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/ic_gender_symbols_02"
@@ -52,12 +52,13 @@
         android:textColor="#000000" />
 
     <EditText
+
         android:id="@+id/fullName"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:padding="10dp"
-        android:background="#fff"
+        android:background="@drawable/caixinhas_arredondadas"
         android:textColor="#000"
         android:inputType="textPersonName" />
 
@@ -75,7 +76,7 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:padding="10dp"
-        android:background="#fff"
+        android:background="@drawable/caixinhas_arredondadas"
         android:textColor="#000"
         android:inputType="textEmailAddress" />
 
@@ -93,7 +94,7 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:padding="10dp"
-        android:background="#fff"
+        android:background="@drawable/caixinhas_arredondadas"
         android:textColor="#000"
         android:inputType="textPassword" />
 
@@ -111,17 +112,17 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:padding="10dp"
-        android:background="#fff"
+        android:background="@drawable/caixinhas_arredondadas"
         android:textColor="#000"
         android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:background="#851075"
-        android:layout_marginTop="20dp"
+        android:layout_width="208dp"
+        android:layout_height="53dp"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botao_arredondado"
         android:text="CADASTRAR" />
 
     <ProgressBar

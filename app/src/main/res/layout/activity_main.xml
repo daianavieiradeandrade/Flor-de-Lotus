@@ -41,8 +41,9 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
+        android:padding="10dp"
         android:gravity="center"
-        android:background="#F4F4F4"
+        android:background="@drawable/caixinhas_arredondadas"
         android:textColor="#000"
         android:textColorHint="#8C7979"
         android:hint="Informe seu e-mail"
@@ -60,8 +61,9 @@
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:gravity="center"
+        android:padding="10dp"
         android:textColorHint="#8C7979"
-        android:background="#F4F4F4"
+        android:background="@drawable/caixinhas_arredondadas"
         android:textColor="#000"
         android:hint="Informe sua senha"
         android:inputType="textPassword" />
@@ -71,7 +73,7 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="15dp"
-        android:background="#851075"
+        android:background="@drawable/botao_arredondado"
         android:text="LOGIN"/>
 
     <Button
@@ -80,7 +82,7 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:background="#851075"
+        android:background="@drawable/botao_arredondado"
         android:text="CADASTRO"/>
 
     <ProgressBar
@@ -89,7 +91,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible" />
-
+<!--
     <Button
         android:id="@+id/btnAdmin"
         android:layout_width="300dp"
@@ -98,5 +100,6 @@
         android:layout_marginTop="10dp"
         android:background="#1A88DF"
         android:text="ADMIN INPUT ARTICLES" />
+        -->
 </LinearLayout>
 
