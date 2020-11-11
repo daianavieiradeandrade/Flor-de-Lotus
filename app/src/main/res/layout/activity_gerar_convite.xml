@@ -1,40 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#9864F3"
+    android:orientation="vertical"
     tools:context=".GerarConvite">
 
-    <EditText
-        android:id="@+id/codigo"
+
+    <TextView
+        android:id="@+id/txt_codigo"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginBottom="24dp"
         android:background="#000000"
         android:gravity="center"
         android:hint="ABCD1234"
-        android:textColor="#11AE3D" />
+        android:textColor="#11AE3D"
+        app:layout_constraintBottom_toTopOf="@+id/btn_gerar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/btn_gerar"
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginBottom="32dp"
         android:background="#21F11D"
         android:text="GERAR CÓDIGO"
-        android:textColor="#000" />
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_gravity="center"
-        android:layout_marginTop="75dp"
-        android:background="#21F11D">
+        android:layout_marginBottom="100dp"
+        android:background="#21F11D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
@@ -61,4 +75,5 @@
             android:background="@drawable/ic_share" />
     </RelativeLayout>
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
