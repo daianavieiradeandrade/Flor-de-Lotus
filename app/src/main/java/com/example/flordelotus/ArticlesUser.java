@@ -1,14 +1,18 @@
 package com.example.flordelotus;
-
+/**
+ * RECEBER AS POSTAGENS FEITAS PELO ADMIN
+ * PODER SELECIONARA POSTAGEM E ABRIR ELA EM UM TAMANHO MAIOR
+ * FAVORITAR POSTAGENS
+ * COMPARTILHAR POSTAGENS
+ * MODO DE VISUALIZAÇÃO INFINITO
+ **/
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class ArticlesUser extends AppCompatActivity {
 

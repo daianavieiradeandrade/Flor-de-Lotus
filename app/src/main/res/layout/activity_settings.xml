@@ -28,11 +28,11 @@
 
     <TextView
         android:id="@+id/txtFullName"
+        android:background="@drawable/caixinha_settings"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="20dp"
-        android:background="@drawable/caixinha_settings"
         android:gravity="center"
         android:padding="10dp"
         android:inputType="textPersonName"
@@ -47,13 +47,12 @@
         android:gravity="bottom"
         android:text="  E-mail" />
 
-
     <TextView
         android:id="@+id/txtEmail"
+        android:background="@drawable/caixinha_settings"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:background="@drawable/caixinha_settings"
         android:padding="10dp"
         android:gravity="center"
         android:layout_gravity="center"
@@ -62,38 +61,38 @@
 
     <Button
         android:id="@+id/btn_connect"
+        android:background="@drawable/botao_arredondado"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:background="@drawable/botao_arredondado"
         android:text="Conectar Parceiro" />
 
     <Button
         android:id="@+id/btnDisconnect"
+        android:background="@drawable/botao_arredondado"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:background="@drawable/botao_arredondado"
         android:text="Desconectar parceiro" />
 
     <Button
         android:id="@+id/btnDelete"
+        android:background="@drawable/botao_arredondado"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:background="@drawable/botao_arredondado"
         android:text="DELETAR CONTA" />
 
     <Button
         android:id="@+id/btnSair"
+        android:background="@drawable/botao_arredondado"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:background="@drawable/botao_arredondado"
         android:text="SAIR" />
 
     <ProgressBar

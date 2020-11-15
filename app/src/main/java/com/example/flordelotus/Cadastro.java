@@ -1,5 +1,13 @@
 package com.example.flordelotus;
 
+/**
+ * 1. Se o cadastro for do genero feminino colocar o acesso direto pro cadastro de periodo
+ * 2. Se o cadastro for  do genero masculino solicitar o convite da usuaria do genero feminino
+ * 2.1 Se o convite nao for inserido o login do usuario masculino sempre sera redirecionado a activity de convite
+ * 2.2 O convite devera ser procurado nos dados do firebase se ele existir ele estara acessando os dados da usuaria que o criou
+ * 2.3 ver como fazer esse acesso somente em modo leitura
+ * */
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -72,7 +80,6 @@ public class Cadastro extends AppCompatActivity {
                 String password = mPassword.getText().toString().trim();
                 String checkPassword = mPasswordConfirm.getText().toString().trim();
 
-
                 if(TextUtils.isEmpty(name)){
                     mFullName.setError("Nome não pode estar em branco.");
                     return;
@@ -107,7 +114,7 @@ public class Cadastro extends AppCompatActivity {
                                     user.put("Nome", name);
                                     user.put("E-mail", email);
                                     if(f.isChecked()){
-                                        user.put("Genero", mulher);
+                                        user.put("Gênero", mulher);
                                     }else{
                                         user.put("Gênero", homem);
                                     }
@@ -119,7 +126,7 @@ public class Cadastro extends AppCompatActivity {
                                     }).addOnFailureListener(new OnFailureListener() {
                                         @Override
                                         public void onFailure(@NonNull Exception e) {
-                                            Log.d(TAG, "Falhou o registro:  " + e.toString());
+                                            Log.d(TAG, "Falha ao tentar registrar:  " + e.toString());
                                         }
                                     });
 
@@ -130,7 +137,7 @@ public class Cadastro extends AppCompatActivity {
                                         startActivity(new Intent(getApplicationContext(), InserirConvite.class));
                                     }
                                 }else{
-                                    Toast.makeText(Cadastro.this, "Erro!" + task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Cadastro.this, "Erro ao criar a conta!" + task.getException().getMessage(),Toast.LENGTH_SHORT).show();
                                     progressBar.setVisibility(View.GONE);
                                 }
                             }

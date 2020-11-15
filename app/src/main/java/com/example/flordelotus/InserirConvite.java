@@ -1,5 +1,8 @@
 package com.example.flordelotus;
-
+/**
+ * SE CÓDIGO DIGITADO ESTIVER RELACIONADO A ALGUM CAMPO DE QUALQUER USUARIO ACESSAR AS INFORMAÇÕES DELA
+ * VER SE É POSSIVEL VER INFORMAÇÃO EM MODO LEITURA
+ * */
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;

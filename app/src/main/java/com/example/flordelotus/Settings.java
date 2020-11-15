@@ -1,5 +1,10 @@
 package com.example.flordelotus;
-
+/**
+ * 1. Fazer Logout
+ * 2. Desconectar Usuario masculino
+ * 3. Deletar conta (a conta feminina e masculina deveria ser excluida)
+ * 4. Enviar botao de ir na activitie de gerar convite
+ */
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -122,6 +127,7 @@ public class Settings extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                Toast.makeText(Settings.this, "Saindo...", Toast.LENGTH_LONG).show();
             }
         });
     }

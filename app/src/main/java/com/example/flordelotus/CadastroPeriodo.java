@@ -1,5 +1,9 @@
 package com.example.flordelotus;
 
+/**
+ * 1. salvar cadastro periodo no firebase
+ * */
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
