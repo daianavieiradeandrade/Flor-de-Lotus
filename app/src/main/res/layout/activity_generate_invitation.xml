@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#9864F3"
     android:orientation="vertical"
-    tools:context=".GerarConvite">
+    tools:context=".GenerateInvitationActivity">
 
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="12dp"
         android:background="#000000"
         android:gravity="center"
         android:hint="ABCD1234"
@@ -29,7 +29,7 @@
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="24dp"
         android:background="#21F11D"
         android:text="GERAR CÓDIGO"
         android:textColor="#000"
@@ -74,6 +74,17 @@
             android:layout_marginBottom="31dp"
             android:background="@drawable/ic_share" />
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="192dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_couple" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

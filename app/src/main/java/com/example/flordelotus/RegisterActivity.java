@@ -1,11 +1,9 @@
 package com.example.flordelotus;
 
 /**
- * 1. Se o cadastro for do genero feminino colocar o acesso direto pro cadastro de periodo
- * 2. Se o cadastro for  do genero masculino solicitar o convite da usuaria do genero feminino
- * 2.1 Se o convite nao for inserido o login do usuario masculino sempre sera redirecionado a activity de convite
- * 2.2 O convite devera ser procurado nos dados do firebase se ele existir ele estara acessando os dados da usuaria que o criou
- * 2.3 ver como fazer esse acesso somente em modo leitura
+ * REGISTRO GENERO FEMININO: IR PARA "PERIOD ACTIVITY"
+ * REGISTRO GENERO MASCULINO: IR PARA "INPUTINVITATIONACTIVITY"
+ * SE O CONVITE NÃO FOR INSERIDO O LOGIN SEMPRE SERA DIRECIONADO PRA "INPUTINVITATIONACTIVITY"
  * */
 
 import androidx.annotation.NonNull;
@@ -35,7 +33,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Cadastro extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     private static final String TAG = "TAG";
     RadioGroup gender;
@@ -50,15 +48,15 @@ public class Cadastro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro);
+        setContentView(R.layout.activity_register);
 
-        gender = findViewById(R.id.groupGender);
-        f = findViewById(R.id.feminino);
-        m = findViewById(R.id.masculino);
-        mFullName = findViewById(R.id.fullName);
-        mEmail = findViewById(R.id.email);
-        mPassword = findViewById(R.id.password);
-        mPasswordConfirm = findViewById(R.id.passwordConfirm);
+        gender = findViewById(R.id.groupGenero);
+        f = findViewById(R.id.genero_feminino);
+        m = findViewById(R.id.genero_masculino);
+        mFullName = findViewById(R.id.nomeCompleto);
+        mEmail = findViewById(R.id.edt_user_email);
+        mPassword = findViewById(R.id.edt_user_password);
+        mPasswordConfirm = findViewById(R.id.edt_user_password_confirm);
         btnRegister = findViewById(R.id.btnRegister);
 
         fAuth = FirebaseAuth.getInstance();
@@ -107,7 +105,7 @@ public class Cadastro extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
-                                    Toast.makeText(Cadastro.this, "Conta criada com sucesso!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(RegisterActivity.this, "Conta criada com sucesso!", Toast.LENGTH_SHORT).show();
                                     userID = fAuth.getCurrentUser().getUid();
                                     DocumentReference documentReference = fStore.collection("users").document(userID);
                                     Map<String,Object> user = new HashMap<>();
@@ -131,13 +129,13 @@ public class Cadastro extends AppCompatActivity {
                                     });
 
                                     if(f.isChecked()){
-                                        startActivity(new Intent(getApplicationContext(), CadastroPeriodo.class));
+                                        startActivity(new Intent(getApplicationContext(), PeriodActivity.class));
                                     }
                                     if(m.isChecked()) {
-                                        startActivity(new Intent(getApplicationContext(), InserirConvite.class));
+                                        startActivity(new Intent(getApplicationContext(), InputInvitationActivity.class));
                                     }
                                 }else{
-                                    Toast.makeText(Cadastro.this, "Erro ao criar a conta!" + task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(RegisterActivity.this, "Erro ao criar a conta!" + task.getException().getMessage(),Toast.LENGTH_SHORT).show();
                                     progressBar.setVisibility(View.GONE);
                                 }
                             }

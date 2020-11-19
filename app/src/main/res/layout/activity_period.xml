@@ -7,17 +7,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#9864F3"
-    tools:context=".CadastroPeriodo">
+    tools:context=".PeriodActivity">
 
     <TextView
         android:layout_width="300dp"
         android:layout_height="106dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:background="@drawable/caixinhas_arredondadas"
+        android:background="@drawable/user_inputbox"
         android:padding="20dp"
         android:text="Seja bem vinda!
-Vamos começar com as configurações iniciais para monitoramento do seu ciclo menstrual e fértil?"
+Vamos começar com as configurações iniciais para monitoramento do seu ciclo?"
         android:textColor="#000" />
 
     <TextView
@@ -29,12 +29,12 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/lastPeriod"
+        android:id="@+id/ultimoPeriodo"
         android:layout_width="190dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:background="@drawable/caixinhas_arredondadas"
+        android:background="@drawable/user_inputbox"
         android:gravity="center"
         android:hint="12/11/2020"
         android:inputType="date"
@@ -50,12 +50,12 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/periodDays"
+        android:id="@+id/duracaoDias"
         android:layout_width="195dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:background="@drawable/caixinhas_arredondadas"
+        android:background="@drawable/user_inputbox"
         android:gravity="center"
         android:hint="5 dias"
         android:inputType="number"
@@ -71,12 +71,12 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/periodAvarage"
+        android:id="@+id/mediaPeriodo"
         android:layout_width="192dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:background="@drawable/caixinhas_arredondadas"
+        android:background="@drawable/user_inputbox"
         android:gravity="center"
         android:hint="28 dias"
         android:inputType="number"
@@ -84,12 +84,12 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
         android:textColorHint="#564654" />
 
     <Button
-        android:id="@+id/btnSave"
+        android:id="@+id/btnSalvar"
         android:layout_width="213dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:background="@drawable/botao_arredondado"
+        android:background="@drawable/user_botao_arredondado"
         android:text="salvar" />
 
     <ProgressBar
@@ -98,6 +98,5 @@ Vamos começar com as configurações iniciais para monitoramento do seu ciclo m
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible" />
-
 
 </LinearLayout>

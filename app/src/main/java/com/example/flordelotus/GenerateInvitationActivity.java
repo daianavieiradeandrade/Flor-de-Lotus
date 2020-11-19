@@ -1,8 +1,7 @@
 package com.example.flordelotus;
 /**
- * 1. Gerar convite randomico com letras e numeros
- * 2. Se o botao share for acionado salvar o codigo no campo codigo da usuaria
- * 3. Compartilhar o codigo gerado
+ * 1. GERAR CONVITE E SALVAR NO FIREBASE NO CAMPO CONVITE DA USUARIA
+ * 2. BOTAO SHARE COPIA A INFORMAÇÃO DO CONVITE GERADO
  * */
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -12,7 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import java.util.Random;
 
-public class GerarConvite extends AppCompatActivity {
+public class GenerateInvitationActivity extends AppCompatActivity {
 
     private TextView txtCodigo;
     private Button btnGerar;
@@ -21,7 +20,7 @@ public class GerarConvite extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gerar_convite);
+        setContentView(R.layout.activity_generate_invitation);
 
         txtCodigo = findViewById(R.id.txt_codigo);
         btnGerar = findViewById(R.id.btn_gerar);

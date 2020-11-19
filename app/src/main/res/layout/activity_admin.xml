@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#3DC9FF"
-    tools:context=".ArticlesAdmin">
+    tools:context=".AdminActivity">
 
 
     <EditText
-        android:id="@+id/insertPost"
+        android:id="@+id/criarPost"
         android:layout_width="300dp"
         android:layout_height="400dp"
         android:padding="10dp"
@@ -24,7 +24,7 @@
         android:hint="Insira a postagem" />
 
     <Button
-        android:id="@+id/btnPost"
+        android:id="@+id/botaoPostar"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -33,7 +33,7 @@
         android:text="Postar" />
 
     <Button
-        android:id="@+id/btnEditPost"
+        android:id="@+id/botaoEditarPost"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

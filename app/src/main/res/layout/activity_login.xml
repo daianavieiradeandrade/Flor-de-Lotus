@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#9864F3"
-    tools:context=".InserirConvite">
+    tools:context=".LoginActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         android:text="FLOR DE LÓTUS" />
 
     <ImageView
-        app:srcCompat="@drawable/ic_flor"
+        app:srcCompat="@drawable/ic_lotus"
         android:layout_width="250dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
@@ -37,13 +37,13 @@
         android:text="E-MAIL" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/edt_user_email"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:padding="10dp"
         android:gravity="center"
-        android:background="@drawable/caixinhas_arredondadas"
+        android:background="@drawable/user_inputbox"
         android:textColor="#000"
         android:textColorHint="#8C7979"
         android:hint="Informe seu e-mail"
@@ -56,14 +56,14 @@
         android:text="SENHA" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/edt_user_password"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:padding="10dp"
         android:textColorHint="#8C7979"
-        android:background="@drawable/caixinhas_arredondadas"
+        android:background="@drawable/user_inputbox"
         android:textColor="#000"
         android:hint="Informe sua senha"
         android:inputType="textPassword" />
@@ -73,7 +73,7 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/botao_arredondado"
+        android:background="@drawable/user_botao_arredondado"
         android:text="LOGIN"/>
 
     <Button
@@ -82,7 +82,7 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/botao_arredondado"
+        android:background="@drawable/user_botao_arredondado"
         android:text="CADASTRO"/>
 
     <ProgressBar
@@ -91,15 +91,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible" />
-<!--
-    <Button
-        android:id="@+id/btnAdmin"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="#1A88DF"
-        android:text="ADMIN INPUT ARTICLES" />
-        -->
+
 </LinearLayout>
 

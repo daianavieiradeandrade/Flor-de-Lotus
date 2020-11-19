@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#2CA1FD"
-    tools:context=".InserirConvite">
+    tools:context=".InputInvitationActivity">
 
     <ImageView
         android:layout_width="246dp"
@@ -19,7 +19,7 @@
         tools:ignore="VectorDrawableCompat" />
 
     <EditText
-        android:id="@+id/insere_convite"
+        android:id="@+id/etd_meu_convite"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -29,7 +29,7 @@
         android:hint="Informe o código de sua parceira"
         android:inputType="textPersonName" />
     <Button
-        android:id="@+id/valida_convite"
+        android:id="@+id/btn_verifica_convite"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="50dp"

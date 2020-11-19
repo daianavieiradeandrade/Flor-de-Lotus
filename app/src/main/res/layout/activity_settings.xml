@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#9864F3"
-    tools:context=".Settings">
+    tools:context=".SettingsActivity">
 
     <ImageView
         android:layout_marginTop="10dp"
@@ -27,8 +27,8 @@
     android:text="  Nome" />
 
     <TextView
-        android:id="@+id/txtFullName"
-        android:background="@drawable/caixinha_settings"
+        android:id="@+id/txt_nome_completo"
+        android:background="@drawable/user_nome_email_settings"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -48,8 +48,8 @@
         android:text="  E-mail" />
 
     <TextView
-        android:id="@+id/txtEmail"
-        android:background="@drawable/caixinha_settings"
+        android:id="@+id/txt_email_usuario"
+        android:background="@drawable/user_nome_email_settings"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textSize="20dp"
@@ -60,8 +60,8 @@
         android:text="seu@email.com" />
 
     <Button
-        android:id="@+id/btn_connect"
-        android:background="@drawable/botao_arredondado"
+        android:id="@+id/btn_conectar_parceiro"
+        android:background="@drawable/user_botao_arredondado"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -69,8 +69,8 @@
         android:text="Conectar Parceiro" />
 
     <Button
-        android:id="@+id/btnDisconnect"
-        android:background="@drawable/botao_arredondado"
+        android:id="@+id/btn_desconectar_parceiro"
+        android:background="@drawable/user_botao_arredondado"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -78,8 +78,8 @@
         android:text="Desconectar parceiro" />
 
     <Button
-        android:id="@+id/btnDelete"
-        android:background="@drawable/botao_arredondado"
+        android:id="@+id/btn_deletar_conta"
+        android:background="@drawable/user_botao_arredondado"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -87,8 +87,8 @@
         android:text="DELETAR CONTA" />
 
     <Button
-        android:id="@+id/btnSair"
-        android:background="@drawable/botao_arredondado"
+        android:id="@+id/btn_logout"
+        android:background="@drawable/user_botao_arredondado"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

@@ -7,14 +7,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#9864F3"
-    tools:context=".CalendarAction">
+    tools:context=".CalendarActivity">
 
     <LinearLayout
         android:layout_width="330dp"
         android:layout_height="134dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:background="@drawable/notas_info"
+        android:background="@drawable/user_notas_informacao"
         android:orientation="vertical"
         android:padding="20dp">
 
@@ -40,7 +40,7 @@
         android:layout_height="346dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:background="@drawable/calendario"
+        android:background="@drawable/user_calendario_background"
         android:gravity="center_horizontal"/>
 
     <RelativeLayout
@@ -48,7 +48,6 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/txt_setting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -64,7 +63,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="97dp"
             android:layout_marginTop="30dp"
-            android:background="@drawable/ic_gender" />
+            android:background="@drawable/user_button_settings" />
 
         <TextView
             android:id="@+id/name_user_app"
@@ -77,7 +76,6 @@
             android:textColor="#000000"/>
 
         <TextView
-            android:id="@+id/txt_planning"
             android:layout_width="96dp"
             android:layout_height="34dp"
             android:layout_alignParentRight="true"
@@ -94,7 +92,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="40dp"
             android:layout_marginRight="103dp"
-            android:background="@drawable/ic_038_pregnant_1" />
+            android:background="@drawable/ic_pregnant" />
     </RelativeLayout>
 
 </LinearLayout>

@@ -1,30 +1,22 @@
 package com.example.flordelotus;
 /**
- * 1. Fazer Logout
- * 2. Desconectar Usuario masculino
- * 3. Deletar conta (a conta feminina e masculina deveria ser excluida)
- * 4. Enviar botao de ir na activitie de gerar convite
+ * BOTÃO DE LOGOUT DA CONTA
+ * MANTER ATIVA A SESSÃO NO APLICATIVO SEMP PRECISAR FAZER LOGIN TODA VEZ
+ * DESCONECTAR PARCEIRO DO APLICATIVO
+ * DELETAR A CONTA DO USUARIO
+ * BOTAO PARA IR NA TELA DE GERAR CONVITE
  */
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
@@ -33,9 +25,7 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
-import java.io.File;
-
-public class Settings extends AppCompatActivity {
+public class SettingsActivity extends AppCompatActivity {
 
     TextView nome, email;
     Button conectarParceiro;
@@ -54,12 +44,12 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        nome = findViewById(R.id.txtFullName);
-        email = findViewById(R.id.txtEmail);
-        conectarParceiro = findViewById(R.id.btn_connect);
-        desconectaParceiro = findViewById(R.id.btnDisconnect);
-        sair = findViewById(R.id.btnSair);
-        deletaConta = findViewById(R.id.btnDelete);
+        nome = findViewById(R.id.txt_nome_completo);
+        email = findViewById(R.id.txt_email_usuario);
+        conectarParceiro = findViewById(R.id.btn_conectar_parceiro);
+        desconectaParceiro = findViewById(R.id.btn_desconectar_parceiro);
+        sair = findViewById(R.id.btn_logout);
+        deletaConta = findViewById(R.id.btn_deletar_conta);
         progressBar = findViewById(R.id.progressBar);
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -68,7 +58,7 @@ public class Settings extends AppCompatActivity {
 
         userID = firebaseAuth.getCurrentUser().getUid();
 
-        DocumentReference documentReference = fStore.collection("users").document(userID);
+        DocumentReference documentReference = fStore.collection("Usuarios").document(userID);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
@@ -80,7 +70,7 @@ public class Settings extends AppCompatActivity {
         conectarParceiro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Settings.this, GerarConvite.class));
+                startActivity(new Intent(SettingsActivity.this, GenerateInvitationActivity.class));
             }
         });
                 /*
@@ -120,14 +110,14 @@ public class Settings extends AppCompatActivity {
                 AlertDialog alertDialog = dialog.create();
                 alertDialog.show();
             }
-        });*/
-
-        /*AQUI EU TENTEI COLOCAR LOGOUT MAS COLOQUEI PARA IR NA ACTIVITIE DE INICIO MESMO*/
+        });
+*/
+        //TENTAR APLICAR O MODELO DE LOGOUT CERTO
         sair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                Toast.makeText(Settings.this, "Saindo...", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                Toast.makeText(SettingsActivity.this, "Saindo...", Toast.LENGTH_LONG).show();
             }
         });
     }

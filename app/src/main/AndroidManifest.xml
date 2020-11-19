@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".ArticlesAdmin"></activity>
-        <activity android:name=".CadastroPeriodo" />
-        <activity android:name=".CalendarAction" />
-        <activity android:name=".ArticlesUser" />
-        <activity android:name=".GerarConvite" />
-        <activity android:name=".Settings" />
-        <activity android:name=".InserirConvite" />
-        <activity android:name=".Cadastro" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".AdminActivity"></activity>
+        <activity android:name=".PeriodActivity" />
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".ArticlesActivity" />
+        <activity android:name=".GenerateInvitationActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".InputInvitationActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

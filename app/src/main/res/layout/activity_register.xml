@@ -7,28 +7,26 @@
     android:orientation="vertical"
     android:background="#9864F3"
     android:layout_height="match_parent"
-    tools:context=".Cadastro">
+    tools:context=".RegisterActivity">
 
     <ImageView
-        android:id="@+id/imgGender"
         android:layout_width="150dp"
         android:layout_height="139dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/ic_gender_symbols_02"
+        app:srcCompat="@drawable/ic_gender"
         tools:ignore="VectorDrawableCompat" />
 
     <RadioGroup
-        android:id="@+id/groupGender"
+        android:id="@+id/groupGenero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_below="@id/imgGender">
+        android:layout_gravity="center">
 
         <RadioButton
-            android:id="@+id/feminino"
+            android:id="@+id/genero_feminino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -36,7 +34,7 @@
             android:textColor="#000000" />
 
         <RadioButton
-            android:id="@+id/masculino"
+            android:id="@+id/genero_masculino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="MASCULINO"
@@ -53,12 +51,12 @@
 
     <EditText
 
-        android:id="@+id/fullName"
+        android:id="@+id/nomeCompleto"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:padding="10dp"
-        android:background="@drawable/caixinhas_arredondadas"
+        android:background="@drawable/user_inputbox"
         android:textColor="#000"
         android:inputType="textPersonName" />
 
@@ -71,12 +69,12 @@
         android:textColor="#000000"/>
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/edt_user_email"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:padding="10dp"
-        android:background="@drawable/caixinhas_arredondadas"
+        android:background="@drawable/user_inputbox"
         android:textColor="#000"
         android:inputType="textEmailAddress" />
 
@@ -89,12 +87,12 @@
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/edt_user_password"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:padding="10dp"
-        android:background="@drawable/caixinhas_arredondadas"
+        android:background="@drawable/user_inputbox"
         android:textColor="#000"
         android:inputType="textPassword" />
 
@@ -107,12 +105,12 @@
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/passwordConfirm"
+        android:id="@+id/edt_user_password_confirm"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:padding="10dp"
-        android:background="@drawable/caixinhas_arredondadas"
+        android:background="@drawable/user_inputbox"
         android:textColor="#000"
         android:inputType="textPassword" />
 
@@ -122,7 +120,7 @@
         android:layout_height="53dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:background="@drawable/botao_arredondado"
+        android:background="@drawable/user_botao_arredondado"
         android:text="CADASTRAR" />
 
     <ProgressBar

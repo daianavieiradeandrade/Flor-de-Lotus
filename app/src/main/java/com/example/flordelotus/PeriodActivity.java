@@ -1,7 +1,11 @@
 package com.example.flordelotus;
 
 /**
- * 1. salvar cadastro periodo no firebase
+ * SALVAR ULTIMO PERIODO
+ * SALVAR DIAS CICLO
+ * SALVAR MEDIA CICLO
+ * PERIODO FUTURO DE MENSTRUAÇÃO: ULTIMO PERIODO + MEDIA CICLO
+ * MARCAÇÃO DE DIAS DE DURAÇÃO: PERIODO FUTURO + DIAS CICLO
  * */
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +19,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-public class CadastroPeriodo extends AppCompatActivity {
+public class PeriodActivity extends AppCompatActivity {
 
     EditText ultimoCiclo, diasCiclo, mediaCiclo;
     Button salvar;
@@ -24,12 +28,12 @@ public class CadastroPeriodo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_periodo);
+        setContentView(R.layout.activity_period);
 
-        ultimoCiclo = findViewById(R.id.lastPeriod);
-        diasCiclo = findViewById(R.id.periodDays);
-        mediaCiclo = findViewById(R.id.periodAvarage);
-        salvar = findViewById(R.id.btnSave);
+        ultimoCiclo = findViewById(R.id.ultimoPeriodo);
+        diasCiclo = findViewById(R.id.duracaoDias);
+        mediaCiclo = findViewById(R.id.mediaPeriodo);
+        salvar = findViewById(R.id.btnSalvar);
         progressBar = findViewById(R.id.progressBar);
 
         salvar.setOnClickListener(new View.OnClickListener() {
@@ -52,8 +56,8 @@ public class CadastroPeriodo extends AppCompatActivity {
                     return;
                 }
                 progressBar.setVisibility(View.VISIBLE);
-                startActivity(new Intent(getApplicationContext(), CalendarAction.class));
-                Toast.makeText(CadastroPeriodo.this, "Seja Bem Vinda!", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getApplicationContext(), CalendarActivity.class));
+                Toast.makeText(PeriodActivity.this, "Seja Bem Vinda!", Toast.LENGTH_LONG).show();
             }
         });
     }
