@@ -32,18 +32,20 @@ public class GenerateInvitationActivity extends AppCompatActivity {
                 txtCodigo.setText(getRandomString(10));
             }
         });
+        //COMPARTILHAR CÓDIGO
         btnShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String result = txtCodigo.getText().toString();
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
-                String share = txtCodigo.toString();
-                intent.putExtra(Intent.EXTRA_TEXT, share);
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Seu código de parceiro");
+                intent.putExtra(Intent.EXTRA_TEXT, result);
                 startActivity(Intent.createChooser(intent, "Enviar código usando"));
             }
         });
-
     }
+
     /*METODO DE GERAR TEXTO RANDOMICO*/
     public static String getRandomString(int i) {
         final String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
