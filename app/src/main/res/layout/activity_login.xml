@@ -27,8 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="20sp"
-        android:text="SEJA BEM VINDO!" />
+        android:text="SEJA BEM VINDO!"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_gravity="center"
@@ -37,7 +37,7 @@
         android:text="E-MAIL" />
 
     <EditText
-        android:id="@+id/edt_user_email"
+        android:id="@+id/email"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
@@ -56,7 +56,7 @@
         android:text="SENHA" />
 
     <EditText
-        android:id="@+id/edt_user_password"
+        android:id="@+id/password"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_gravity="center"

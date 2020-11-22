@@ -36,8 +36,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mEmail = findViewById(R.id.edt_user_email);
-        mPassword = findViewById(R.id.edt_user_password);
+        mEmail = findViewById(R.id.email);
+        mPassword = findViewById(R.id.password);
         progressBar = findViewById(R.id.progressBar);
         fAuth = FirebaseAuth.getInstance();
         login = findViewById(R.id.btnLogin);
@@ -69,9 +69,9 @@ public class LoginActivity extends AppCompatActivity {
                             startActivity(new Intent(getApplicationContext(), CalendarActivity.class));
                            /**
                             * admin@gmail.com
-                            * senha: admin123
+                            * senha: adm123
                             **/
-                            if (email.contains("admin@gmaail.com")){
+                            if (email.contains("adm@gmail.com")){
                                 startActivity(new Intent(getApplicationContext(), AdminActivity.class));
                             } else { startActivity(new Intent(getApplicationContext(), CalendarActivity.class)); }
 

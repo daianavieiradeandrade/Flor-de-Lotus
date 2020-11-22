@@ -53,10 +53,10 @@ public class RegisterActivity extends AppCompatActivity {
         gender = findViewById(R.id.groupGenero);
         f = findViewById(R.id.genero_feminino);
         m = findViewById(R.id.genero_masculino);
-        mFullName = findViewById(R.id.nomeCompleto);
-        mEmail = findViewById(R.id.edt_user_email);
-        mPassword = findViewById(R.id.edt_user_password);
-        mPasswordConfirm = findViewById(R.id.edt_user_password_confirm);
+        mFullName = findViewById(R.id.fullName);
+        mEmail = findViewById(R.id.email);
+        mPassword = findViewById(R.id.password);
+        mPasswordConfirm = findViewById(R.id.passwordConfirm);
         btnRegister = findViewById(R.id.btnRegister);
 
         fAuth = FirebaseAuth.getInstance();

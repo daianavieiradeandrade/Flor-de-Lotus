@@ -44,8 +44,9 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        nome = findViewById(R.id.txt_nome_completo);
-        email = findViewById(R.id.txt_email_usuario);
+        nome = findViewById(R.id.txtFullName);
+        email = findViewById(R.id.txtEmail);
+
         conectarParceiro = findViewById(R.id.btn_conectar_parceiro);
         desconectaParceiro = findViewById(R.id.btn_desconectar_parceiro);
         sair = findViewById(R.id.btn_logout);
@@ -58,7 +59,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         userID = firebaseAuth.getCurrentUser().getUid();
 
-        DocumentReference documentReference = fStore.collection("Usuarios").document(userID);
+        DocumentReference documentReference = fStore.collection("users").document(userID);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {

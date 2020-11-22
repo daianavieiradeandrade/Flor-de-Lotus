@@ -9,6 +9,12 @@
     android:background="#9864F3"
     tools:context=".ArticlesActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+<!--
     <TextView
         android:id="@+id/textView_post1"
         android:layout_width="300dp"
@@ -64,4 +70,7 @@
         android:background="@drawable/user_botao_arredondado"
         android:layout_marginTop="20dp"
         android:text="Voltar" />
+
+        -->
+
 </LinearLayout>

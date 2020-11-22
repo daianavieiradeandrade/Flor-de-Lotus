@@ -7,6 +7,8 @@ package com.example.flordelotus;
  * MODO DE VISUALIZAÇÃO INFINITO [ROLAGEM]
  **/
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +18,8 @@ import android.widget.TextView;
 
 public class ArticlesActivity extends AppCompatActivity {
 
+    CardView card;
+    RecyclerView recycler_user;
     Button voltar;
     TextView posts;
 
@@ -24,8 +28,10 @@ public class ArticlesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_articles);
 
+        /*
         voltar = findViewById(R.id.btn_voltar);
         posts = findViewById(R.id.textView_post1);
+        card = findViewById(R.id.cardview);
 
         voltar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +39,6 @@ public class ArticlesActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), CalendarActivity.class));
             }
 
-        });
+        });*/
     }
 }

@@ -30,7 +30,7 @@ public class CalendarActivity extends AppCompatActivity {
         articles.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CalendarActivity.this, ArticlesActivity.class));
+                startActivity(new Intent(CalendarActivity.this,AdminActivity.class));
             }
         }));
 

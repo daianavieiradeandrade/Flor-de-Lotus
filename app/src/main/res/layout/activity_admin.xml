@@ -1,43 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#3DC9FF"
     tools:context=".AdminActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
-    <EditText
-        android:id="@+id/criarPost"
-        android:layout_width="300dp"
-        android:layout_height="400dp"
-        android:padding="10dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:background="#fff"
-        android:textColor="#000"
-        android:gravity="center"
-        android:textColorHint="#000"
-        android:inputType="textMultiLine"
-        android:hint="Insira a postagem" />
-
-    <Button
-        android:id="@+id/botaoPostar"
-        android:layout_width="300dp"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/botao_add_post"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:background="#1A88DF"
-        android:text="Postar" />
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_add"/>
 
-    <Button
-        android:id="@+id/botaoEditarPost"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="#1A88DF"
-        android:layout_marginTop="10dp"
-        android:text="Editar Postagens" />
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -27,11 +27,12 @@
     android:text="  Nome" />
 
     <TextView
-        android:id="@+id/txt_nome_completo"
+        android:id="@+id/txtFullName"
         android:background="@drawable/user_nome_email_settings"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textColor="#fff"
         android:textSize="20dp"
         android:gravity="center"
         android:padding="10dp"
@@ -48,12 +49,13 @@
         android:text="  E-mail" />
 
     <TextView
-        android:id="@+id/txt_email_usuario"
+        android:id="@+id/txtEmail"
         android:background="@drawable/user_nome_email_settings"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:padding="10dp"
+        android:textColor="#fff"
         android:gravity="center"
         android:layout_gravity="center"
         android:inputType="textPersonName"

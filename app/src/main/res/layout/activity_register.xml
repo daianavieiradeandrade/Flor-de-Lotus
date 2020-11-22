@@ -51,7 +51,7 @@
 
     <EditText
 
-        android:id="@+id/nomeCompleto"
+        android:id="@+id/fullName"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
@@ -69,7 +69,7 @@
         android:textColor="#000000"/>
 
     <EditText
-        android:id="@+id/edt_user_email"
+        android:id="@+id/email"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="40dp"
@@ -87,7 +87,7 @@
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/edt_user_password"
+        android:id="@+id/password"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="40dp"
@@ -105,7 +105,7 @@
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/edt_user_password_confirm"
+        android:id="@+id/passwordConfirm"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="40dp"
