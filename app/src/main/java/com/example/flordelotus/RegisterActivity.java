@@ -63,11 +63,6 @@ public class RegisterActivity extends AppCompatActivity {
         fStore = FirebaseFirestore.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
-       /*if(fAuth.getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-            finish();
-        }*/
-
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,11 +106,13 @@ public class RegisterActivity extends AppCompatActivity {
                                     Map<String,Object> user = new HashMap<>();
                                     user.put("Nome", name);
                                     user.put("E-mail", email);
+                                    /*
                                     if(f.isChecked()){
                                         user.put("Gênero", mulher);
                                     }else{
                                         user.put("Gênero", homem);
-                                    }
+                                    }*/
+
                                     documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                         @Override
                                         public void onSuccess(Void aVoid) {

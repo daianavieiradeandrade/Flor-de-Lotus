@@ -24,15 +24,8 @@ public class CalendarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
 
-        articles=(Button)findViewById(R.id.btn_articles);
-        settings=(Button)findViewById(R.id.btn_settings);
-
-        articles.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(CalendarActivity.this,AdminActivity.class));
-            }
-        }));
+        articles=findViewById(R.id.btn_articles);
+        settings=findViewById(R.id.btn_settings);
 
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,5 +33,12 @@ public class CalendarActivity extends AppCompatActivity {
                 startActivity(new Intent(CalendarActivity.this, SettingsActivity.class));
             }
         });
+
+        articles.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CalendarActivity.this,AdminActivity.class));
+            }
+        }));
     }
 }

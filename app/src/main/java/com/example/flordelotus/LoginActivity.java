@@ -43,6 +43,18 @@ public class LoginActivity extends AppCompatActivity {
         login = findViewById(R.id.btnLogin);
         register = findViewById(R.id.btnRegister);
 
+        /*if(fAuth.getCurrentUser() != null){
+            // Se estiver logado ele entrara direto no calendario
+            startActivity(new Intent(getApplicationContext(), CalendarActivity.class));
+            Toast.makeText(LoginActivity.this, "Já está logado!",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+        }else {
+            // Se não estiver logado
+            Toast.makeText(LoginActivity.this, "Falha ao entrar",
+                    Toast.LENGTH_SHORT).show();
+        }*/
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

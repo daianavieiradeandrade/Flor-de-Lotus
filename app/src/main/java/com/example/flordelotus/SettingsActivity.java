@@ -74,7 +74,10 @@ public class SettingsActivity extends AppCompatActivity {
                 startActivity(new Intent(SettingsActivity.this, GenerateInvitationActivity.class));
             }
         });
-                /*
+
+        /*
+        A CONTA É DELETADA MAS DA UM ERRO AO FECHAR
+
         deletaConta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -113,12 +116,21 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 */
-        //TENTAR APLICAR O MODELO DE LOGOUT CERTO
+        //MODELO DE LOGOUT ERRADO
         sair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                 Toast.makeText(SettingsActivity.this, "Saindo...", Toast.LENGTH_LONG).show();
+
+
+                 /*MODELO DE LOGOUT CERTO! DANDO ERRO
+                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                i.putExtra("finish", true);
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i);
+                FirebaseAuth.getInstance().signOut();
+                finish();*/
             }
         });
     }
