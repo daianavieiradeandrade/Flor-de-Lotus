@@ -22,14 +22,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Periodo menstrual iniciado em 26/06/2019 - Domingo"
+            android:text="Periodo menstrual iniciado em 03/12/2020 - Domingo"
             android:textColor="#000" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Periodo menstrual iniciado em 26/06/2019 - Domingo"
+            android:text="Periodo fértil iniciara em 17/12/2020 - Domingo"
             android:textColor="#000" />
     </LinearLayout>
 
@@ -41,7 +41,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/user_calendario_background"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal" />
 
     <RelativeLayout
         android:layout_width="match_parent"

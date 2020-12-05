@@ -8,6 +8,7 @@ package com.example.flordelotus;
  * MARCAÇÃO DE DIAS DE DURAÇÃO: PERIODO FUTURO + DIAS CICLO
  * */
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -19,11 +20,27 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+
+import java.util.Calendar;
+import java.util.Date;
+
 public class PeriodActivity extends AppCompatActivity {
 
     EditText ultimoCiclo, diasCiclo, mediaCiclo;
     Button salvar;
     ProgressBar progressBar;
+    String userID;
+
+    FirebaseFirestore fStore;
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +53,16 @@ public class PeriodActivity extends AppCompatActivity {
         salvar = findViewById(R.id.btnSalvar);
         progressBar = findViewById(R.id.progressBar);
 
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseUser = firebaseAuth.getCurrentUser();
+        fStore = FirebaseFirestore.getInstance();
+
+        userID = firebaseAuth.getCurrentUser().getUid();
+
         salvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String ultimo= ultimoCiclo.getText().toString().trim();
+                String ultimo = ultimoCiclo.getText().toString().trim();
                 String dias= diasCiclo.getText().toString().trim();
                 String media= mediaCiclo.getText().toString().trim();
 
@@ -55,7 +78,9 @@ public class PeriodActivity extends AppCompatActivity {
                     mediaCiclo.setError("Informe a média de dias.");
                     return;
                 }
+
                 progressBar.setVisibility(View.VISIBLE);
+
                 startActivity(new Intent(getApplicationContext(), CalendarActivity.class));
                 Toast.makeText(PeriodActivity.this, "Seja Bem Vinda!", Toast.LENGTH_LONG).show();
             }
